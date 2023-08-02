@@ -4,6 +4,8 @@ import Logo from '../../olx-logo.png';
 import './Login.css';
 
 function Login() {
+  
+
   return (
     <div>
       <div className="loginParentDiv">
@@ -16,7 +18,6 @@ function Login() {
             type="email"
             id="fname"
             name="email"
-            defaultValue="John"
           />
           <br />
           <label htmlFor="lname">Password</label>
@@ -26,7 +27,6 @@ function Login() {
             type="password"
             id="lname"
             name="password"
-            defaultValue="Doe"
           />
           <br />
           <br />
