@@ -15,7 +15,6 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
     try {
       //Create new customer using email and password
       const result = await firebase.auth().createUserWithEmailAndPassword(email, password);
@@ -35,6 +34,9 @@ export default function Signup() {
     }
   };
   
+  const handleLoginClick = ()=>{
+    history.push('/login');
+  }
 
   return (
     <div>
@@ -92,7 +94,7 @@ export default function Signup() {
           <br />
           <button>Signup</button>
         </form>
-        <a href='#'>Login</a>
+        <a onClick={handleLoginClick}>Login</a>
       </div>
     </div>
   );
