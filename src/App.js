@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom/cjs/react-route
 import Signup from './Pages/Signup'
 import Login from './Pages/Login'
 import Home from './Pages/Home'
+import Create from './Pages/Create'
 import { AuthContext, FirebaseContext } from './store/FirebaseContext';
 
 
@@ -30,8 +31,10 @@ function App() {
         <Route path='/home'>
           <Home />
         </Route>
+        <Route path='/create'>
+          <Create />
+        </Route>
       </Router>
-
     </div>
   );
 }
