@@ -34,7 +34,7 @@ function Login() {
   return (
     <div>
       <div className="loginParentDiv">
-        <img width="200px" height="200px" src={Logo}></img>
+        <img alt='#' width="200px" height="200px" src={Logo}></img>
         <form onSubmit={handleLogin}>
           <label htmlFor="fname">Email</label>
           <br />
